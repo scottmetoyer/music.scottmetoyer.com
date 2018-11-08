@@ -1,0 +1,42 @@
+body {
+    background-color: #29435B;
+    padding: 20px;
+    color: white;
+    font-family: myriad-devanagari, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    padding-top: 40px;
+}
+
+p {
+    line-height: 1.6em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.fluid {
+    width: 90%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
